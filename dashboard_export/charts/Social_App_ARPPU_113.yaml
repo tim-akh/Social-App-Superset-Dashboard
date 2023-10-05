@@ -1,0 +1,43 @@
+slice_name: Social App ARPPU
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 28__table
+  viz_type: big_number_total
+  slice_id: 112
+  metric:
+    expressionType: SQL
+    sqlExpression: SUM(consume) / COUNT(DISTINCT user_id)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: ARPPU
+    optionName: metric_5933v3nedxv_2a6esffvr5c
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: behaviour_type
+    operator: ==
+    operatorId: EQUALS
+    comparator: buy
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_hr9e30h74b9_uzz38qz96ap
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards: []
+query_context: '{"datasource":{"id":28,"type":"table"},"force":false,"queries":[{"filters":[{"col":"behaviour_type","op":"==","val":"buy"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"SUM(consume)
+  / COUNT(DISTINCT user_id)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"ARPPU","optionName":"metric_5933v3nedxv_2a6esffvr5c"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"28__table","viz_type":"big_number_total","slice_id":112,"metric":{"expressionType":"SQL","sqlExpression":"SUM(consume)
+  / COUNT(DISTINCT user_id)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"ARPPU","optionName":"metric_5933v3nedxv_2a6esffvr5c"},"adhoc_filters":[{"expressionType":"SIMPLE","subject":"behaviour_type","operator":"==","operatorId":"EQUALS","comparator":"buy","clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_hr9e30h74b9_uzz38qz96ap"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 98404b3d-8249-4a60-bd13-9a97ad39e58c
+version: 1.0.0
+dataset_uuid: b2748a08-95dc-4560-897f-8cabc94f9dd9

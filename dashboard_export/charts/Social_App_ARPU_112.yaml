@@ -1,0 +1,38 @@
+slice_name: Social App ARPU
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 28__table
+  viz_type: big_number_total
+  metric:
+    expressionType: SQL
+    sqlExpression: SUM(consume) / COUNT(DISTINCT user_id)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: ARPU
+    optionName: metric_5933v3nedxv_2a6esffvr5c
+  adhoc_filters:
+  - clause: WHERE
+    subject: ts
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  header_font_size: 0.4
+  subheader_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  extra_form_data: {}
+  dashboards: []
+query_context: '{"datasource":{"id":28,"type":"table"},"force":false,"queries":[{"filters":[{"col":"ts","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"SUM(consume)
+  / COUNT(DISTINCT user_id)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"ARPU","optionName":"metric_5933v3nedxv_2a6esffvr5c"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"28__table","viz_type":"big_number_total","metric":{"expressionType":"SQL","sqlExpression":"SUM(consume)
+  / COUNT(DISTINCT user_id)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"ARPU","optionName":"metric_5933v3nedxv_2a6esffvr5c"},"adhoc_filters":[{"clause":"WHERE","subject":"ts","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"header_font_size":0.4,"subheader_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 0a5c6928-4cfc-4793-b2f0-698164e7b124
+version: 1.0.0
+dataset_uuid: b2748a08-95dc-4560-897f-8cabc94f9dd9
